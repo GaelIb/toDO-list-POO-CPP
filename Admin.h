@@ -8,10 +8,11 @@ class Admin : public User {
 public:
     Admin();
     Admin(string, string, string);
-    void showRole() const override;
 
-    Task createTask(string name, string description, string assignedTo, int estimatedHours) const;
-    void assignTask(Task& task, string newAssignedTo) const;
+    void showRole(); // override
+
+    Task createTask(string, string, string, int);
+    void assignTask(Task*, string);
 };
 
 #endif
