@@ -19,7 +19,7 @@ int main() {
         cout << "3. Create project\n";
         cout << "4. Add admin or collaborator to the project\n";
         cout << "5. Add task to project\n";
-        cout << "6. Show all \n";
+        cout << "6. Show all\n";
         cout << "0. Exit\n";
         cin >> op;
 
@@ -46,41 +46,41 @@ int main() {
             projects.push_back(Project(n, d));
         }
         else if (op == 4) {
-            int idxProj;
-            cout << "Project index (0-" << projects.size()-1 << "): ";
-            cin >> idxProj;
-            int miembro;
-            cout << "Add 1. Admin or 2. Collaborator "; cin >> miembro;
-            if (miembro == 1) {
+            int projectPos;
+            cout << "Project number (0-" << projects.size()-1 << "): ";
+            cin >> projectPos;
+            int memberType;
+            cout << "Add 1. Admin or 2. Collaborator: "; cin >> memberType;
+            if (memberType == 1) {
                 for (int i = 0; i < admins.size(); i++)
                     cout << i << ". " << admins[i].getName() << endl;
-                int idxA;
-                cout << "Admin index: "; 
-                cin >> idxA;
-                projects[idxProj].addMember(&admins[idxA]);
+                int adminNum;
+                cout << "Which admin number: ";
+                cin >> adminNum;
+                projects[projectPos].addMember(&admins[adminNum]);
             }
             else {
                 for (int i = 0; i < collaborators.size(); i++)
                     cout << i << ". " << collaborators[i].getName() << endl;
-                int idxC;
-                cout << "Collaborator index: "; cin >> idxC;
-                projects[idxProj].addMember(&collaborators[idxC]);
+                int collaboratorNum;
+                cout << "Which collaborator number: "; cin >> collaboratorNum;
+                projects[projectPos].addMember(&collaborators[collaboratorNum]);
             }
         }
         else if (op == 5) {
-            int idxProj, idxA;
-            cout << "Project index (0-" << projects.size()-1 << "): ";
-            cin >> idxProj;
-            cout << "Admin index (0-" << admins.size()-1 << "): ";
-            cin >> idxA;
+            int projectChoice, adminChoice;
+            cout << "Project number (0-" << projects.size()-1 << "): ";
+            cin >> projectChoice;
+            cout << "Admin number (0-" << admins.size()-1 << "): ";
+            cin >> adminChoice;
             string tn, td, ta;
             int th;
             cout << "Task name: "; cin >> tn;
             cout << "Description: "; cin >> td;
             cout << "Assigned to: "; cin >> ta;
             cout << "Estimated hours: "; cin >> th;
-            Task t = admins[idxA].createTask(tn, td, ta, th);
-            projects[idxProj] += t;
+            Task t = admins[adminChoice].createTask(tn, td, ta, th);
+            projects[projectChoice] += t;
             cout << "Task added to project\n";
         }
         else if (op == 6) {
@@ -99,4 +99,7 @@ int main() {
     }
     return 0;
 }
+
+
+
 
