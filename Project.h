@@ -14,27 +14,27 @@ private:
     string dueDate;
     vector<Task> tasks;
     vector<User*> members;
-
 public:
     Project();
     Project(string, string);
 
-    string getName() const;
-    string getDueDate() const;
-    int getNumTasks() const;
-    int getNumMembers() const;
+    string getName();
+    string getDueDate();
+    int getNumTasks();
+    int getNumMembers();
 
-    void setName(const string&);
-    void setDueDate(const string&);
+    void setName(string);
+    void setDueDate(string);
 
-    void addTask(const Task&);
-    void addMember(Admin&);
-    void addMember(Collaborator&);
+    Project& operator+=(Task);
 
-    const vector<Task>& getTasks() const;
-    const vector<User*>& getMembers() const;
+    void addMember(Admin*);
+    void addMember(Collaborator*);
 
-    void changeTaskState(int, const string&);
+    vector<Task>& getTasks();
+    vector<User*>& getMembers();
+
+    void changeTaskState(int, string);
 };
 
 #endif
