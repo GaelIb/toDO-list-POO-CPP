@@ -28,5 +28,5 @@ Tasks must have a name, description, assigned person, and estimated completion t
 ##Educational Purpose:
 This project demonstrates practical OOP usage in C++, ideal for academic assignments or as a base for more advanced systems. It helps learners understand class hierarchies and good object design practices.
 
-![To_do_list](https://github.com/user-attachments/assets/391a0024-f9c9-4916-afec-60d06483bf49)
+![To_do_list (1)](https://github.com/user-attachments/assets/39967fc1-53be-4c4d-bcf6-10023931de05)
 
