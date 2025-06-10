@@ -13,17 +13,16 @@ public:
     User();
     User(string, string, string);
 
-    string getName() const;
-    string getPhone() const;
-    string getEmail() const;
+    string getName();
+    string getPhone();
+    string getEmail();
 
-    void setName(const string&);
-    void setPhone(const string&);
-    void setEmail(const string&);
+    void setName(string);
+    void setPhone(string);
+    void setEmail(string);
 
-    virtual void showRole() const = 0;
-    virtual ~User() {}
+    virtual void showRole() = 0;
+
 };
 
 #endif
-
