@@ -1,6 +1,5 @@
 #ifndef TASK_H
 #define TASK_H
-
 #include <string>
 using namespace std;
 
@@ -15,19 +14,20 @@ public:
     Task();
     Task(string, string, string, int);
 
-    string getName() const;
-    string getDescription() const;
-    string getAssignedTo() const;
-    string getState() const;
-    int getEstimatedHours() const;
+    string getName();
+    string getDescription();
+    string getAssignedTo();
+    string getState();
+    int getEstimatedHours();
 
-    void setName(const string&);
-    void setDescription(const string&);
-    void setAssignedTo(const string&);
-    void setState(const string&);
+    void setName(string);
+    void setDescription(string);
+    void setAssignedTo(string);
+    void setState(string);
     void setEstimatedHours(int);
 
-    void changeState(const string&);
+    void changeState(string);
 };
 
 #endif
+
