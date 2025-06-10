@@ -8,9 +8,10 @@ class Collaborator : public User {
 public:
     Collaborator();
     Collaborator(string, string, string);
-    void showRole() const override;
 
-    void changeTaskState(Task& task, const string& newState) const;
+    void showRole(); // override
+
+    void changeTaskState(Task*, string);
 };
 
 #endif
