@@ -32,6 +32,11 @@ Key Features:
 Educational Purpose:
 This project demonstrates practical OOP usage in C++, ideal for academic assignments or as a base for more advanced systems. It helps learners understand class hierarchies and good object design practices.
 
+How to compile:
+1.-Open the terminal and make sure to have a C++ compilator.
+2.- write: g++ main.cpp Admin.cpp Collaborator.cpp Project.cpp Task.cpp User.cpp -o gestor_tareas
+3.- then: ./gestor_tareas
+
 
 
 
