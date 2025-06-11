@@ -19,8 +19,8 @@ The project class will have a special name and due date, and can group a maximum
 
 Tasks must have a name, description, assigned person, and estimated completion time.
 
-##Key Features:
-- **Class inheritance** (`User`, `Administrator`, `Collaborator`)
+Key Features:
+- Class inheritance
 - Use of constructors and custom method
 - Class relationships through composition and aggregation
 - Functions include: task creation, marking tasks as completed, displaying tasks, and user assignment
@@ -29,7 +29,7 @@ Tasks must have a name, description, assigned person, and estimated completion t
 - The use of polymorphism in the code.
 - Adequate use of operator overload.
 
-##Educational Purpose:
+Educational Purpose:
 This project demonstrates practical OOP usage in C++, ideal for academic assignments or as a base for more advanced systems. It helps learners understand class hierarchies and good object design practices.
 
 
