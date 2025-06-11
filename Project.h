@@ -25,7 +25,7 @@ public:
 
     void setName(string);
     void setDueDate(string);
-
+//operator overload
     Project& operator+=(Task);
 
     void addMember(Admin*);
