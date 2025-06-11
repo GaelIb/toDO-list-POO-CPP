@@ -7,7 +7,7 @@ The program will have functions such as the date assigned and the date completed
 
 This is important because it will help prevent forgetting activities or tasks within each project.
 
-In this project, the top-level class will be the user class, which will inherit from collaborator and administrator. There will also be two constructor classes: projects and tasks. A project contains a task, and both users and collaborators will be able to access the content of each project, where they can change the status of each task.
+In this project, the top-level class will be the user class, and both collaborator and admin inherit from that class. There will also be two adittional classes: projects and tasks. A project contains a task, and both users and collaborators will be able to access the content of each project, where they can change the status of each task.
 
 The user class will have characteristics such as name, phone number, and email address.
 
@@ -24,9 +24,18 @@ Tasks must have a name, description, assigned person, and estimated completion t
 - Use of constructors and custom method
 - Class relationships through composition and aggregation
 - Functions include: task creation, marking tasks as completed, displaying tasks, and user assignment
+- The inclusion and use of overload and override methods.
+- The implementation of an abstract class which in this case is the user class.
+- The use of polymorphism in the code.
+- Adequate use of operator overload.
 
 ##Educational Purpose:
 This project demonstrates practical OOP usage in C++, ideal for academic assignments or as a base for more advanced systems. It helps learners understand class hierarchies and good object design practices.
+
+
+
+
+
 
 ![To_do_list (1)](https://github.com/user-attachments/assets/39967fc1-53be-4c4d-bcf6-10023931de05)
 
