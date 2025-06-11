@@ -8,6 +8,7 @@ class Collaborator : public User {
 public:
     Collaborator();
     Collaborator(string, string, string);
+    // Implementation of pure virtual method
 
     void showRole(); // override
 
